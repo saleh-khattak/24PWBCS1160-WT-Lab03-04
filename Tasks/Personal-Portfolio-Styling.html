@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio - Lab 02</title>
+  <link rel="stylesheet" href="../Styles/Personal-Portfolio-Styling.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== Header / Navigation ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Muhammad Saleh</div>
+      <ul class="nav-links">
+        <li><a href="#about" class="active">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">☰</div>
+    </nav>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <img src="../images/WhatsApp Image 2025-07-17 at 11.12.19 PM.jpeg" alt="Profile Photo" class="profile-img">
+    <h1>Hi, I'm <span>Muhammad Saleh</span></h1>
+    <p>A passionate Web Developer & Computer Science Student at UET Peshawar</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I’m currently pursuing a degree in Computer Science at the University of Engineering & Technology, Peshawar.
+      I enjoy building interactive, responsive web interfaces and exploring modern web technologies.
+    </p>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section id="projects" class="section">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="https://www.pexels.com/photo/studying-reproductive-system-6473097/" alt="Project 1">
+        <div class="project-info">
+          <h3>StudySpark</h3>
+          <p>AI-powered MERN app that generates summaries, flashcards, and quizzes for study topics.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="https://i.imgur.com/fQn9bKZ.jpg" alt="Project 2">
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>Responsive personal website showcasing my projects, skills, and contact information.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="https://i.imgur.com/DfB7nXi.jpg" alt="Project 3">
+        <div class="project-info">
+          <h3>Todo Manager</h3>
+          <p>Task management web app using HTML, CSS, and JavaScript with local storage support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills Section ===== -->
+  <section id="skills" class="section skills">
+    <h2>Skills</h2>
+    <div class="skill-tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>Node.js</span>
+      <span>Python</span>
+      <span>Git</span>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <p>Interested in working together or have a question? Let’s connect!</p>
+    <a href="mailto:muhammadsaleh79777@gmail.com" class="btn">Send Email</a>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>CS 224L Web Technologies | Mr. Mohammad, Lecturer<br>
+    Department of Computer Science, University of Engineering & Technology, Peshawar</p>
+    <p>© 2025 Muhammad Saleh</p>
+  </footer>
+
+  <script>
+    // Responsive menu toggle
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
