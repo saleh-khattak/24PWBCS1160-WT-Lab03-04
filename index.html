@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Technologies Lab Tasks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* ==== Global Styles ==== */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #2c3e50, #4ca1af);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 5px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    /* ==== Task Grid ==== */
+    .task-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 1000px;
+      margin: 50px auto;
+    }
+
+    .task-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 25px 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .task-card:hover {
+      transform: translateY(-8px);
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .task-card a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.05rem;
+      display: block;
+      margin-top: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .task-card a:hover {
+      color: #ffeaa7;
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.2);
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CS 224L Web Technologies</h1>
+    <p>Mr. Mohammad, Lecturer — Department of Computer Science</p>
+    <p>University of Engineering & Technology, Peshawar</p>
+  </header>
+
+  <section class="task-container">
+    <div class="task-card"><a href="Tasks/CSS-Selectors-Practice.html">Task 1: CSS Selectors Practice</a></div>
+    <div class="task-card"><a href="Tasks/Typography-Showcase.html">Task 2: Typography Showcase</a></div>
+    <div class="task-card"><a href="Tasks/Background-Gallery.html">Task 3: Background Gallery</a></div>
+    <div class="task-card"><a href="Tasks/Image-Styling-Portfolio.html">Task 4: Image Styling Portfolio</a></div>
+    <div class="task-card"><a href="Tasks/Button-Styling-Collection.html">Task 5: Button Styling Collection</a></div>
+    <div class="task-card"><a href="Tasks/Form-Styling.html">Task 6: Form Styling</a></div>
+    <div class="task-card"><a href="Tasks/Card-Component-Design.html">Task 7: Card Component Design</a></div>
+    <div class="task-card"><a href="Tasks/Navigation-Menu-Styling.html">Task 8: Navigation Menu Styling</a></div>
+    <div class="task-card"><a href="Tasks/CSS-Transform-Gallery.html">Task 9: CSS Transform Gallery</a></div>
+    <div class="task-card"><a href="Tasks/Advanced-Effects-Showcase.html">Task 10: Advanced Effects Showcase</a></div>
+    <div class="task-card"><a href="Tasks/Personal-Portfolio-Styling.html">Task 11: Personal Portfolio Styling</a></div>
+    <div class="task-card"><a href="Tasks/Course-Website-Styling.html">Task 12: Course Website Styling</a></div>
+    <div class="task-card"><a href="Tasks/GitHub-Pages-Enhancement.html">Task 13: GitHub Pages Enhancement</a></div>
+  </section>
+
+  <footer>
+    © 2025 CS 224L — Web Technologies | UET Peshawar by MUHAMMAD SALEH
+  </footer>
+</body>
+</html>
