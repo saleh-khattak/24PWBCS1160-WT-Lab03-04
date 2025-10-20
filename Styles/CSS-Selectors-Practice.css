@@ -1,0 +1,86 @@
+/* --- 5 Basic Selectors --- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+p {
+  color: #555;
+}
+
+#special {
+  font-weight: bold;
+  color: darkblue;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+/* --- 3 Attribute Selectors --- */
+input[type="text"] {
+  border: 2px solid green;
+}
+
+input[type="email"] {
+  border: 2px solid blue;
+}
+
+input[placeholder*="password"] {
+  border: 2px solid red;
+}
+
+/* --- 4 Combinators --- */
+div > h2 { /* Child combinator */
+  color: purple;
+}
+
+ul li + li { /* Adjacent sibling */
+  color: teal;
+}
+
+p ~ ul { /* General sibling */
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+section a:hover > span { /* Descendant + pseudo-class example */
+  color: orange;
+}
+
+/* --- 5 Pseudo-classes --- */
+a:hover {
+  color: red;
+}
+
+button:focus {
+  outline: 2px solid orange;
+}
+
+li:first-child {
+  color: green;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+input:valid {
+  background-color: #e8ffe8;
+}
+
+/* --- 2 Pseudo-elements --- */
+p::first-letter {
+  font-size: 1.5em;
+  color: crimson;
+}
+
+h1::after {
+  content: " ✨";
+  color: gold;
+}

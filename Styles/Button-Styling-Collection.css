@@ -1,0 +1,155 @@
+/* --- General Page Styling --- */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f8fa;
+  color: #333;
+}
+
+header {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+main {
+  padding: 40px;
+}
+
+.buttons-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* --- Base Button Styling --- */
+.btn {
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* --- Colors --- */
+.btn-primary {
+  background-color: #3498db;
+}
+
+.btn-secondary {
+  background-color: #7f8c8d;
+}
+
+.btn-success {
+  background-color: #27ae60;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+}
+
+/* --- Sizes --- */
+.btn-large {
+  padding: 16px 36px;
+  font-size: 1.2rem;
+}
+
+.btn-medium {
+  padding: 12px 24px;
+  font-size: 1rem;
+}
+
+.btn-small {
+  padding: 8px 16px;
+  font-size: 0.85rem;
+}
+
+/* --- Shapes --- */
+.btn-square {
+  border-radius: 0;
+}
+
+.btn-rounded {
+  border-radius: 10px;
+}
+
+.btn-pill {
+  border-radius: 50px;
+}
+
+/* --- Gradient & Shadow --- */
+.btn-gradient {
+  background: linear-gradient(45deg, #ff6a00, #ee0979);
+}
+
+.btn-shadow {
+  background-color: #8e44ad;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Hover & Focus Effects --- */
+.btn:hover:not(:disabled) {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.btn:focus {
+  outline: 3px solid rgba(52, 152, 219, 0.6);
+  outline-offset: 2px;
+}
+
+/* --- Custom Hover Example --- */
+.btn-hover {
+  background-color: #f39c12;
+}
+
+.btn-hover:hover {
+  background-color: #d35400;
+}
+
+/* --- Focus Example --- */
+.btn-focus {
+  background-color: #16a085;
+}
+
+.btn-focus:focus {
+  background-color: #1abc9c;
+}
+
+/* --- Disabled Button Styling --- */
+.btn:disabled {
+  background-color: #bdc3c7;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+  opacity: 0.7;
+}
+
+/* --- Footer --- */
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}

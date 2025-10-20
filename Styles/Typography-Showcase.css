@@ -1,0 +1,81 @@
+/* --- General Page Styling --- */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 40px;
+  background: #f9fafc;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #555;
+}
+
+.dept {
+  color: #444;
+}
+
+/* --- Google Fonts Demonstration --- */
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-lora {
+  font-family: 'Lora', serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* --- Font Sizes with Different Units --- */
+.px { font-size: 20px; }
+.em { font-size: 1.5em; }
+.rem { font-size: 2rem; }
+.percent { font-size: 150%; }
+
+/* --- Text Alignment --- */
+.left { text-align: left; }
+.center { text-align: center; }
+.right { text-align: right; }
+.justify { text-align: justify; }
+
+/* --- Text Decoration & Transformation --- */
+.underline { text-decoration: underline; }
+.line-through { text-decoration: line-through; }
+.uppercase { text-transform: uppercase; }
+.capitalize { text-transform: capitalize; }
+
+/* --- Text Shadow Effects --- */
+.shadow1 {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.shadow2 {
+  text-shadow: 0 0 8px #00bfff;
+  color: #0077b6;
+}
+
+.shadow3 {
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+  font-weight: bold;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #666;
+}

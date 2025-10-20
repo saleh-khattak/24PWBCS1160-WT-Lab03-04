@@ -1,0 +1,106 @@
+/* --- General Page Styling --- */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+}
+
+section {
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+/* --- 1. Solid Color Background --- */
+.bg-solid {
+  background-color: #3498db;
+}
+
+/* --- 2. Image Backgrounds with Repeat Patterns --- */
+.bg-image {
+  background-color: #eee;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.bg-image div {
+  margin: 15px 0;
+  padding: 40px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* Replace "bg-pattern.jpg" with your actual image file */
+.repeat-x {
+  background: url("bg-pattern.jpg") repeat-x #4caf50;
+}
+
+.repeat-y {
+  background: url("bg-pattern.jpg") repeat-y #9c27b0;
+}
+
+.no-repeat {
+  background: url("bg-pattern.jpg") no-repeat center/contain #2196f3;
+}
+
+/* --- 3. Gradient Backgrounds --- */
+.linear {
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  margin-bottom: 20px;
+  padding: 60px;
+  border-radius: 8px;
+}
+
+.radial {
+  background: radial-gradient(circle, #4facfe, #00f2fe);
+  padding: 60px;
+  border-radius: 8px;
+}
+
+/* --- 4. Multiple Background Layers --- */
+.bg-multiple {
+  background-image: url("bg-pattern.jpg"), linear-gradient(135deg, #667eea, #764ba2);
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  color: white;
+}
+
+/* --- 5. Background Blend Modes --- */
+.bg-blend {
+  background-image: url("bg-pattern.jpg"), linear-gradient(to right, #f83600, #f9d423);
+  background-blend-mode: overlay;
+  background-size: cover;
+  color: white;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #2c3e50;
+  color: white;
+  font-size: 0.9rem;
+}
