@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 8 - Navigation Menu Styling</title>
+  <link rel="stylesheet" href="../Styles/Navigation-Menu-Styling.css" />
+</head>
+<body>
+  <header>
+    <h1>Navigation Menu Styling</h1>
+    <p>CS 224L Web Technologies – Mr. Mohammad, Lecturer</p>
+    <p>Department of Computer Science, UET Peshawar</p>
+  </header>
+
+  <!-- Horizontal Navigation -->
+  <nav class="navbar">
+    <div class="logo">UET Navbar</div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li class="dropdown">
+        <a href="#">Services ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">App Development</a></li>
+          <li><a href="#">SEO</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="menu-toggle">☰</div>
+  </nav>
+
+  <!-- Vertical Sidebar Navigation -->
+  <aside class="sidebar">
+    <h3>Vertical Menu</h3>
+    <ul>
+      <li><a href="#" class="active">Dashboard</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Reports</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <section>
+      <h2>Responsive Navigation Demonstration</h2>
+      <p>
+        Resize the window to see how the navigation adapts. The horizontal navigation converts
+        into a toggle menu on smaller screens.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 UET Peshawar | Designed by Muhammad Saleh</p>
+  </footer>
+
+  <script>
+    // Responsive Toggle Menu Script
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
